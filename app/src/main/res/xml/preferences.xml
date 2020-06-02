@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".settings.SettingsFragment">
+
+    <PreferenceCategory
+        app:key="appSettings"
+        app:title="App Preferences">
+        <ListPreference
+            android:defaultValue="@string/disabled"
+            android:entries="@array/darkModePref"
+            android:entryValues="@array/darkModePref"
+            android:key="darkModeSetting"
+            android:title="Dark Mode"
+            app:useSimpleSummaryProvider="true"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:key="aboutApp"
+        app:title="About App">
+
+        <Preference
+            app:key="version"
+            app:title="Build Version"
+            app:summary="1.3"/>
+
+        <Preference
+            app:key="credits"
+            app:title="Credits"
+            app:fragment="com.destructo.covidtracker.view.ui.CreditsFragment"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

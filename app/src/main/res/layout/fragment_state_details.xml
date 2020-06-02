@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="stateSummary"
+            type="com.destructo.corona_tracker.model.IndiaStateStats" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            style="@style/body_text_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="State Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/body_text_regular"
+
+            android:id="@+id/state_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@{stateSummary.state}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+
+            style="@style/body_text_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Total Infected"
+            app:layout_constraintBaseline_toBaselineOf="@+id/state_cases"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            style="@style/body_text_regular"
+
+            android:id="@+id/state_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:formattedInteger="@{stateSummary.cases}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state_name" />
+
+        <TextView
+            android:id="@+id/textView10"
+
+            style="@style/body_text_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Total Active"
+            app:layout_constraintBaseline_toBaselineOf="@+id/state_active"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            style="@style/body_text_regular"
+
+            android:id="@+id/state_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:formattedInteger="@{stateSummary.active}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state_cases" />
+
+        <TextView
+            android:id="@+id/textView13"
+
+            style="@style/body_text_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Total Recovered"
+            app:layout_constraintBaseline_toBaselineOf="@+id/state_recovered"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            style="@style/body_text_regular"
+
+            android:id="@+id/state_recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:formattedInteger="@{stateSummary.recovered}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state_active" />
+
+        <TextView
+            android:id="@+id/textView18"
+
+            style="@style/body_text_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Total Deaths"
+            app:layout_constraintBaseline_toBaselineOf="@+id/state_deaths"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            style="@style/body_text_regular"
+
+            android:id="@+id/state_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:formattedInteger="@{stateSummary.deaths}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/state_recovered" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

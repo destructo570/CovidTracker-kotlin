@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="bgBottomNavigation">#252525</color>
+    <color name="itemIconColor">#FBFBFB</color>
+    <color name="backGroundColor">#1E1E1E</color>
+    <color name="cardBackgroundColor">#252525</color>
+    <color name="primaryAccent">#4CAF50</color>
+    <color name="primaryAccentDark">#388E3C</color>
+
+    <color name="darkGray">#263238</color>
+    <color name="lightGray">#EEEEEE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="primaryTextColor">#FBFBFB</color>
+    <color name="seondaryTextColor">#757575</color>
+
+    <color name="colorInfected">#E53935</color>
+    <color name="colorActive">#1E88E5</color>
+    <color name="colorRecovered">#43A047</color>
+    <color name="colorDeaths">#757575</color>
+
+    <color name="defaultTextColor">#FBFBFB</color>
+</resources>

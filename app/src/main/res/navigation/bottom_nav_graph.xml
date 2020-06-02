@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/globalFragment">
+
+    <fragment
+        android:id="@+id/globalFragment"
+        android:name="com.destructo.corona_tracker.global.GlobalFragment"
+        tools:layout="@layout/fragment_global" >
+        <action
+            android:id="@+id/action_globalFragment_to_countryFragment"
+            app:destination="@id/countryFragment"
+             />
+        <action
+            android:id="@+id/action_globalFragment_to_globalSummaryDetailsFragment"
+            app:destination="@id/globalSummaryDetailsFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_globalFragment_to_countryDetailsFragment2"
+            app:destination="@id/countryDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+             />
+    </fragment>
+
+    <fragment
+        android:id="@+id/countryFragment"
+        android:name="com.destructo.corona_tracker.country.IndiaFragment"
+        tools:layout="@layout/fragment_country" >
+        <action
+            android:id="@+id/action_countryFragment_to_livemapFragment"
+            app:destination="@id/livemapFragment" />
+        <action
+            android:id="@+id/action_countryFragment_to_stateDetailsFragment"
+            app:destination="@id/stateDetailsFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/livemapFragment"
+        android:name="com.destructo.corona_tracker.liveMap.LiveMapFragment"
+        tools:layout="@layout/fragment_live_map" >
+        <action
+            android:id="@+id/action_livemapFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.destructo.corona_tracker.help.HelpFragment"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_settingsFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_helpFragment_to_covidInfoFragment"
+            app:destination="@id/covidInfoFragment"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_helpFragment_to_indiaHelplineContact"
+            app:destination="@id/indiaHelplineContact"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.destructo.corona_tracker.AboutFragment"
+        />
+
+
+    <fragment
+        android:id="@+id/covidInfoFragment"
+        android:name="com.destructo.corona_tracker.help.CovidInfoFragment"
+        tools:layout="@layout/fragment_covid_info" >
+    </fragment>
+    <fragment
+        android:id="@+id/indiaHelplineContact"
+        android:name="com.destructo.corona_tracker.help.IndiaHelplineContact"
+        tools:layout="@layout/fragment_india_helpline_contact" />
+    <fragment
+        android:id="@+id/globalSummaryDetailsFragment"
+        android:name="com.destructo.corona_tracker.global.globalDetails.GlobalDetailsFragment"
+        >
+
+        <argument android:name="globalSummary"
+            app:argType="com.destructo.corona_tracker.model.GlobalCoronaStatistics"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailsFragment"
+        android:name="com.destructo.corona_tracker.global.globalCountry.CountryDetailsFragment"
+        >
+
+        <argument android:name="countrySummary"
+            app:argType="com.destructo.corona_tracker.model.GlobalCountryStatistics"/>
+    </fragment>
+    <fragment
+        android:id="@+id/stateDetailsFragment"
+        android:name="com.destructo.corona_tracker.country.StateDetailsFragment"
+        >
+        <argument android:name="stateSummary"
+            app:argType="com.destructo.corona_tracker.model.IndiaStateStats"/>
+    </fragment>
+
+
+</navigation>
