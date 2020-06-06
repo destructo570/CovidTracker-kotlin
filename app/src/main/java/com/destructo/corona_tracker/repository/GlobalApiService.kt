@@ -10,6 +10,7 @@ import kotlinx.coroutines.Deferred
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 private const val BASE_URL = "https://disease.sh/v2/"
 
@@ -34,6 +35,10 @@ interface GlobalApiService {
 
     @GET("gov/india")
     fun getIndiaDataAsync(): Deferred<IndiaStatistics>
+
+
+    @GET("countries/{country}")
+    fun getCountryDataAsync(@Path("country") country:String): Deferred<GlobalCountryStatistics>
 }
 
 object GlobalApi {

@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.destructo.corona_tracker.model.GlobalCountryStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats
 import com.destructo.corona_tracker.model.IndiaSummaryStats
 import com.destructo.corona_tracker.repository.GlobalApi
@@ -15,8 +16,8 @@ import java.lang.Exception
 
 class IndiaViewModel:ViewModel() {
 
-    private val  _indiaSummaryData = MutableLiveData<IndiaSummaryStats>()
-    val indiaSummaryData:LiveData<IndiaSummaryStats>
+    private val  _indiaSummaryData = MutableLiveData<GlobalCountryStatistics>()
+    val indiaSummaryData:LiveData<GlobalCountryStatistics>
     get() = _indiaSummaryData
 
     private val _indiaStateData = MutableLiveData<List<IndiaStateStats>>()
@@ -40,10 +41,12 @@ class IndiaViewModel:ViewModel() {
 
         uiScope.launch {
             var getIndiaDataDeferred = GlobalApi.retrofitService.getIndiaDataAsync()
+            var getIndiaSummaryDeferred = GlobalApi.retrofitService.getCountryDataAsync("india")
 
             try {
              val indiaCoronaStatistics = getIndiaDataDeferred.await()
-                _indiaSummaryData.value = indiaCoronaStatistics.summary
+             val indiaSummaryStatistics =  getIndiaSummaryDeferred.await()
+                _indiaSummaryData.value = indiaSummaryStatistics
                 _indiaStateData.value = indiaCoronaStatistics.states
             }catch (e:Exception){
                 Log.e("IndiaViewModel","FAILED NETWORK ERROR\n" + e.message)

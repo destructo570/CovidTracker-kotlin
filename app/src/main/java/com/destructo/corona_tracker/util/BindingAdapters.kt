@@ -46,10 +46,11 @@ fun bindContactList(recyclerView:RecyclerView, data:List<ContactNumber>?){
 
 @BindingAdapter("formattedInteger")
 fun TextView.formatNumber(num:Int?){
-    if(num != null) {
+    if(num != null && num >= 0) {
+
         text = NumberFormat.getNumberInstance(Locale.US).format(num)
     }else{
-        text = "null"
+        text = "0"
     }
 }
 

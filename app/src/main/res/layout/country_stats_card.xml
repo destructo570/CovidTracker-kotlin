@@ -6,7 +6,7 @@
     <data>
     <variable
         name="indiaData"
-        type="com.destructo.corona_tracker.model.IndiaSummaryStats" />
+        type="com.destructo.corona_tracker.model.GlobalCountryStatistics" />
     </data>
 
     <androidx.cardview.widget.CardView
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorInfected"
-                app:formattedInteger="@{indiaData.cases}"
+                app:formattedInteger="@{indiaData.total_infected}"
                 app:layout_constraintBaseline_toBaselineOf="@+id/global_active_txt"
                 app:layout_constraintStart_toStartOf="@+id/card_left_guide"
                 tools:text="300,00"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:textColor="@color/colorActive"
-                app:formattedInteger="@{indiaData.active}"
+                app:formattedInteger="@{indiaData.total_active}"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="300,00"
@@ -86,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorRecovered"
-                app:formattedInteger="@{indiaData.recovered}"
+                app:formattedInteger="@{indiaData.total_recovered}"
                 app:layout_constraintBaseline_toBaselineOf="@+id/global_deaths_txt"
                 app:layout_constraintStart_toStartOf="@+id/card_left_guide"
                 tools:text="300,00"
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:textColor="@color/colorDeaths"
-                app:formattedInteger="@{indiaData.deaths}"
+                app:formattedInteger="@{indiaData.total_deaths}"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintTop_toBottomOf="@+id/textView6"
                 tools:text="300,00"
