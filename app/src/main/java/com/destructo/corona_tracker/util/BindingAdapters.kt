@@ -3,9 +3,8 @@ package com.destructo.corona_tracker.util
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.destructo.corona_tracker.country.IndiaStateAdapter
-import com.destructo.corona_tracker.global.globalCountry.SimpleAdapter
-import com.destructo.corona_tracker.help.HelplineContactAdapter
+import com.destructo.corona_tracker.util.adapter.IndiaStateAdapter
+import com.destructo.corona_tracker.util.adapter.HelplineContactAdapter
 import com.destructo.corona_tracker.model.ContactNumber
 import com.destructo.corona_tracker.model.GlobalCountryStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats

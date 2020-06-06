@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.global
+package com.destructo.corona_tracker.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,7 +9,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.destructo.corona_tracker.databinding.FragmentGlobalBinding
-import com.destructo.corona_tracker.global.globalCountry.*
+import com.destructo.corona_tracker.viewmodel.GlobalViewModel
+import com.destructo.corona_tracker.util.adapter.FinalAdapter
 
 /**
  * A simple [Fragment] subclass.
@@ -34,9 +35,10 @@ class GlobalFragment : Fragment() {
 
         mglobalViewModel.globalCountryStats.observe(viewLifecycleOwner, Observer {
 
-            val adap = FinalAdapter(FinalAdapter.DataClickListener {
-                mglobalViewModel.navigationToCountryDetail(it)
-            })
+            val adap = FinalAdapter(
+                FinalAdapter.DataClickListener {
+                    mglobalViewModel.navigationToCountryDetail(it)
+                })
             adap.submitList(it)
             binding.countryRecycler.adapter = adap
 
@@ -45,7 +47,10 @@ class GlobalFragment : Fragment() {
         mglobalViewModel.navigateToCountryDetail.observe(viewLifecycleOwner, Observer {
             if (null != it){
                 this.findNavController().navigate(
-                    GlobalFragmentDirections.actionGlobalFragmentToCountryDetailsFragment2(it))
+                    GlobalFragmentDirections.actionGlobalFragmentToCountryDetailsFragment2(
+                        it
+                    )
+                )
                 mglobalViewModel.doneNavigationToCountryDetail() }
         })
 

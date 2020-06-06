@@ -7,7 +7,7 @@
 
         <variable
             name="globalViewModel"
-            type="com.destructo.corona_tracker.global.GlobalViewModel" />
+            type="com.destructo.corona_tracker.viewmodel.GlobalViewModel" />
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -16,7 +16,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".global.GlobalFragment">
+        tools:context=".ui.GlobalFragment">
 
 
         <ImageView

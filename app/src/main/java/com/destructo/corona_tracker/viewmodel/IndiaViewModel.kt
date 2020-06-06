@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.country
+package com.destructo.corona_tracker.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData

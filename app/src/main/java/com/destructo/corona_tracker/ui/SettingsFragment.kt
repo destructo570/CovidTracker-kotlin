@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.settings
+package com.destructo.corona_tracker.ui
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -8,7 +8,6 @@ import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.destructo.corona_tracker.R
-import com.destructo.corona_tracker.DarkModeConfig
 
 /**
  * A simple [Fragment] subclass.

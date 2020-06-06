@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.global.globalDetails
+package com.destructo.corona_tracker.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.destructo.corona_tracker.databinding.FragmentGlobalDetailsBinding
+import com.destructo.corona_tracker.viewmodel.GlobalDetailsViewModel
+import com.destructo.corona_tracker.viewmodel.GlobalDetailViewModelFactory
 
 /**
  * A simple [Fragment] subclass.
@@ -25,7 +27,7 @@ class GlobalDetailsFragment : Fragment() {
             requireArguments()
         ).globalSummary
         val viewModelFactory =
-            GlobalDetailsViewModelFactory(
+            GlobalDetailViewModelFactory(
                 globalSummary,
                 application
             )

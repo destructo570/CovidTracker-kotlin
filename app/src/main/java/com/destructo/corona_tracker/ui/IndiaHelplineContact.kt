@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.help
+package com.destructo.corona_tracker.ui
 
 import android.content.Intent
 import android.net.Uri
@@ -9,6 +9,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.destructo.corona_tracker.databinding.FragmentIndiaHelplineContactBinding
+import com.destructo.corona_tracker.util.adapter.ContactClickListener
+import com.destructo.corona_tracker.util.adapter.HelplineContactAdapter
+import com.destructo.corona_tracker.viewmodel.HelplineViewModel
 
 
 /**

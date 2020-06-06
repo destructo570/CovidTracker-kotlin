@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.help
+package com.destructo.corona_tracker.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

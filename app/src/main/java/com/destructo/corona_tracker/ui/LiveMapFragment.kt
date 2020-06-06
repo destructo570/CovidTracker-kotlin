@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.liveMap
+package com.destructo.corona_tracker.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle

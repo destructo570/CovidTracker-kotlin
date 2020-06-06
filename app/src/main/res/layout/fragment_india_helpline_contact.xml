@@ -7,13 +7,13 @@
 
         <variable
             name="helpLineViewModel"
-            type="com.destructo.corona_tracker.help.HelplineViewModel" />
+            type="com.destructo.corona_tracker.viewmodel.HelplineViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".help.IndiaHelplineContact">
+        tools:context=".ui.IndiaHelplineContact">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/helpline_recycler"

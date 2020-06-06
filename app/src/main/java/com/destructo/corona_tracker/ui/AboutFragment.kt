@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker
+package com.destructo.corona_tracker.ui
 
 import android.content.Intent
 import android.net.Uri
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.addCallback
+import com.destructo.corona_tracker.R
 import com.destructo.corona_tracker.databinding.FragmentAboutBinding
 
 /**

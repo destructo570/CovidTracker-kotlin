@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.global
+package com.destructo.corona_tracker.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -36,7 +36,6 @@ class GlobalViewModel : ViewModel() {
 
     private fun getGlobalStatistics() {
         uiScope.launch {
-            Log.e("GlobalViewModel", "Doing on main 1")
             var getGlobalDataDef = GlobalApi.retrofitService.getGlobalDataAsync()
             try {
 
@@ -52,7 +51,6 @@ class GlobalViewModel : ViewModel() {
 
     private fun getCountryStatsList(){
         uiScope.launch {
-            Log.e("GlobalViewModel", "Doing on main 2")
 
             var getCountryDeferred = GlobalApi.retrofitService.getGlobalCountryDataAsync()
             try {

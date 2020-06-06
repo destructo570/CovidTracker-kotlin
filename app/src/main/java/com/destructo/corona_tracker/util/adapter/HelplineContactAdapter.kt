@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.help
+package com.destructo.corona_tracker.util.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

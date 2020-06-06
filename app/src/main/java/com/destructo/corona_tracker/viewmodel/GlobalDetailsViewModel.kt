@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.global.globalDetails
+package com.destructo.corona_tracker.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

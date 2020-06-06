@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.global.globalCountry
+package com.destructo.corona_tracker.util.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,10 +8,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.destructo.corona_tracker.R
-import com.destructo.corona_tracker.databinding.DataListItemViewBinding
 import com.destructo.corona_tracker.model.GlobalCountryStatistics
 import com.destructo.corona_tracker.util.formatNumber
-import kotlinx.android.synthetic.main.new_list_item.view.*
 
 class FinalAdapter(private val onClickListener: DataClickListener):
     ListAdapter<GlobalCountryStatistics, FinalAdapter.ViewHolder>(

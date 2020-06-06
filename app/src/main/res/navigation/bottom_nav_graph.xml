@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/globalFragment"
-        android:name="com.destructo.corona_tracker.global.GlobalFragment"
+        android:name="com.destructo.corona_tracker.ui.GlobalFragment"
         tools:layout="@layout/fragment_global" >
         <action
             android:id="@+id/action_globalFragment_to_countryFragment"
@@ -26,7 +26,7 @@
 
     <fragment
         android:id="@+id/countryFragment"
-        android:name="com.destructo.corona_tracker.country.IndiaFragment"
+        android:name="com.destructo.corona_tracker.ui.IndiaFragment"
         tools:layout="@layout/fragment_country" >
         <action
             android:id="@+id/action_countryFragment_to_livemapFragment"
@@ -39,7 +39,7 @@
 
     <fragment
         android:id="@+id/livemapFragment"
-        android:name="com.destructo.corona_tracker.liveMap.LiveMapFragment"
+        android:name="com.destructo.corona_tracker.ui.LiveMapFragment"
         tools:layout="@layout/fragment_live_map" >
         <action
             android:id="@+id/action_livemapFragment_to_helpFragment"
@@ -48,7 +48,7 @@
 
     <fragment
         android:id="@+id/helpFragment"
-        android:name="com.destructo.corona_tracker.help.HelpFragment"
+        android:name="com.destructo.corona_tracker.ui.HelpFragment"
         tools:layout="@layout/fragment_help" >
         <action
             android:id="@+id/action_helpFragment_to_settingsFragment"
@@ -65,22 +65,22 @@
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.destructo.corona_tracker.AboutFragment"
+        android:name="com.destructo.corona_tracker.ui.AboutFragment"
         />
 
 
     <fragment
         android:id="@+id/covidInfoFragment"
-        android:name="com.destructo.corona_tracker.help.CovidInfoFragment"
+        android:name="com.destructo.corona_tracker.ui.CovidInfoFragment"
         tools:layout="@layout/fragment_covid_info" >
     </fragment>
     <fragment
         android:id="@+id/indiaHelplineContact"
-        android:name="com.destructo.corona_tracker.help.IndiaHelplineContact"
+        android:name="com.destructo.corona_tracker.ui.IndiaHelplineContact"
         tools:layout="@layout/fragment_india_helpline_contact" />
     <fragment
         android:id="@+id/globalSummaryDetailsFragment"
-        android:name="com.destructo.corona_tracker.global.globalDetails.GlobalDetailsFragment"
+        android:name="com.destructo.corona_tracker.ui.GlobalDetailsFragment"
         >
 
         <argument android:name="globalSummary"
@@ -89,7 +89,7 @@
     </fragment>
     <fragment
         android:id="@+id/countryDetailsFragment"
-        android:name="com.destructo.corona_tracker.global.globalCountry.CountryDetailsFragment"
+        android:name="com.destructo.corona_tracker.ui.CountryDetailsFragment"
         >
 
         <argument android:name="countrySummary"
@@ -97,7 +97,7 @@
     </fragment>
     <fragment
         android:id="@+id/stateDetailsFragment"
-        android:name="com.destructo.corona_tracker.country.StateDetailsFragment"
+        android:name="com.destructo.corona_tracker.ui.StateDetailsFragment"
         >
         <argument android:name="stateSummary"
             app:argType="com.destructo.corona_tracker.model.IndiaStateStats"/>

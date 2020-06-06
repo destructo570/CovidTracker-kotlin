@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.country
+package com.destructo.corona_tracker.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,8 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.destructo.corona_tracker.databinding.FragmentStateDetailsBinding
-import com.destructo.corona_tracker.MainActivity
+import com.destructo.corona_tracker.viewmodel.StateDetailViewModelFactory
+import com.destructo.corona_tracker.viewmodel.StateDetailViewModel
 
 /**
  * A simple [Fragment] subclass.
@@ -27,7 +28,7 @@ class StateDetailsFragment : Fragment() {
         ).stateSummary
 
         val viewModelFactory =
-            StateDetailsViewModelFactory(
+            StateDetailViewModelFactory(
                 stateSummary,
                 application
             )

@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.country
+package com.destructo.corona_tracker.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
@@ -7,7 +7,7 @@ import com.destructo.corona_tracker.model.IndiaStateStats
 
 
 @Suppress("UNCHECKED_CAST")
-class StateDetailsViewModelFactory(
+class StateDetailViewModelFactory(
     private val stateData: IndiaStateStats,
     private val application: Application
 ) : ViewModelProvider.Factory

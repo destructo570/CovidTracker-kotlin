@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.global.globalDetails
+package com.destructo.corona_tracker.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.destructo.corona_tracker.model.GlobalCoronaStatistics
 
 @Suppress("UNCHECKED_CAST")
-class GlobalDetailsViewModelFactory (
+class GlobalDetailViewModelFactory (
     private val globalSummary: GlobalCoronaStatistics,
     private val application: Application
     ) : ViewModelProvider.Factory

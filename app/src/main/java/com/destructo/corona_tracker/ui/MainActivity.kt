@@ -1,10 +1,11 @@
-package com.destructo.corona_tracker
+package com.destructo.corona_tracker.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.destructo.corona_tracker.R
 import com.destructo.corona_tracker.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

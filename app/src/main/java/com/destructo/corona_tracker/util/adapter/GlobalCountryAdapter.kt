@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.global.globalCountry
+package com.destructo.corona_tracker.util.adapter
 
 import android.view.LayoutInflater
 import android.view.View
