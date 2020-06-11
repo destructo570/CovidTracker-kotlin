@@ -1,7 +1,7 @@
 package com.destructo.corona_tracker.repository
 
 import com.destructo.corona_tracker.model.GlobalCoronaStatistics
-import com.destructo.corona_tracker.model.GlobalCountryStatistics
+import com.destructo.corona_tracker.model.CountryStatistics
 import com.destructo.corona_tracker.model.IndiaStatistics
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi
@@ -31,14 +31,14 @@ interface GlobalApiService {
 
 
     @GET("countries?sort=cases")
-    fun getGlobalCountryDataAsync(): Deferred<List<GlobalCountryStatistics>>
+    fun getGlobalCountryDataAsync(): Deferred<List<CountryStatistics>>
 
     @GET("gov/india")
     fun getIndiaDataAsync(): Deferred<IndiaStatistics>
 
 
     @GET("countries/{country}")
-    fun getCountryDataAsync(@Path("country") country:String): Deferred<GlobalCountryStatistics>
+    fun getCountryDataAsync(@Path("country") country:String): Deferred<CountryStatistics>
 }
 
 object GlobalApi {

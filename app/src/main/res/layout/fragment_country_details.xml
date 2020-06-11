@@ -6,7 +6,7 @@
     <data>
         <variable
             name="countrySummaryData"
-            type="com.destructo.corona_tracker.model.GlobalCountryStatistics" />
+            type="com.destructo.corona_tracker.model.CountryStatistics" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

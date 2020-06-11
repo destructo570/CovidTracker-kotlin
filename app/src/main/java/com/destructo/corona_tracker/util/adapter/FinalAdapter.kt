@@ -8,11 +8,11 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.destructo.corona_tracker.R
-import com.destructo.corona_tracker.model.GlobalCountryStatistics
+import com.destructo.corona_tracker.model.CountryStatistics
 import com.destructo.corona_tracker.util.formatNumber
 
 class FinalAdapter(private val onClickListener: DataClickListener):
-    ListAdapter<GlobalCountryStatistics, FinalAdapter.ViewHolder>(
+    ListAdapter<CountryStatistics, FinalAdapter.ViewHolder>(
         CountryDiffCallback()
     ) {
 
@@ -35,7 +35,7 @@ class FinalAdapter(private val onClickListener: DataClickListener):
         val infected:TextView = itemView.findViewById(R.id.infected_count_new)
         val increase:TextView = itemView.findViewById(R.id.new_cases_new)
 
-        fun bind(countryData: GlobalCountryStatistics) {
+        fun bind(countryData: CountryStatistics) {
             country.text = countryData.country_name
             infected.text = formatNumber(countryData.total_infected)
             if(countryData.cases_today != null && countryData.cases_today > 0) {
@@ -54,19 +54,19 @@ class FinalAdapter(private val onClickListener: DataClickListener):
     }
 
 
-    class DataClickListener(val clickListener: (country: GlobalCountryStatistics) -> Unit){
-        fun onCLick(country: GlobalCountryStatistics) = clickListener(country)
+    class DataClickListener(val clickListener: (country: CountryStatistics) -> Unit){
+        fun onCLick(country: CountryStatistics) = clickListener(country)
     }
 
 }
 
-class CountryDiffCallback : DiffUtil.ItemCallback<GlobalCountryStatistics>() {
-    override fun areItemsTheSame(oldItem: GlobalCountryStatistics, newItem: GlobalCountryStatistics): Boolean {
+class CountryDiffCallback : DiffUtil.ItemCallback<CountryStatistics>() {
+    override fun areItemsTheSame(oldItem: CountryStatistics, newItem: CountryStatistics): Boolean {
         return oldItem.country_name == newItem.country_name
     }
 
-    override fun areContentsTheSame(oldItem: GlobalCountryStatistics,
-                                    newItem: GlobalCountryStatistics
+    override fun areContentsTheSame(oldItem: CountryStatistics,
+                                    newItem: CountryStatistics
     ): Boolean {
         return oldItem == newItem
     }

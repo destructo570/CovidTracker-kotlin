@@ -49,9 +49,6 @@ class AboutFragment : Fragment() {
             context?.getString(R.string.credit_one_github)?.let { it1 -> openLink(it1) }
         }
 
-        binding.creditTwoGithub.setOnClickListener {
-            context?.getString(R.string.credit_two_github)?.let { it1 -> openLink(it1) }
-        }
     }
 
     private fun openLink(url:String){

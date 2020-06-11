@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.destructo.corona_tracker.model.GlobalCoronaStatistics
-import com.destructo.corona_tracker.model.GlobalCountryStatistics
+import com.destructo.corona_tracker.model.CountryStatistics
 import com.destructo.corona_tracker.repository.GlobalApi
 import kotlinx.coroutines.*
 import java.lang.Exception
@@ -16,12 +16,12 @@ class GlobalViewModel : ViewModel() {
     val globalStats: LiveData<GlobalCoronaStatistics>
         get() = _globalStats
 
-    private var _globalCountryStats = MutableLiveData<List<GlobalCountryStatistics>>()
-    val globalCountryStats:LiveData<List<GlobalCountryStatistics>>
+    private var _globalCountryStats = MutableLiveData<List<CountryStatistics>>()
+    val countryStats:LiveData<List<CountryStatistics>>
     get() = _globalCountryStats
 
-    private val _navigateToCountryDetail = MutableLiveData<GlobalCountryStatistics>()
-    val navigateToCountryDetail: LiveData<GlobalCountryStatistics>
+    private val _navigateToCountryDetail = MutableLiveData<CountryStatistics>()
+    val navigateToCountryDetail: LiveData<CountryStatistics>
     get() = _navigateToCountryDetail
 
     private var globalViewModelJob = Job()
@@ -62,7 +62,7 @@ class GlobalViewModel : ViewModel() {
         }
     }
 
-    fun navigationToCountryDetail(selectedCountry:GlobalCountryStatistics){
+    fun navigationToCountryDetail(selectedCountry:CountryStatistics){
         _navigateToCountryDetail.value = selectedCountry
     }
     fun doneNavigationToCountryDetail(){

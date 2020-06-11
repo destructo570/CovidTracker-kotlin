@@ -101,12 +101,7 @@
     <string name="credit_one_desc">Thanks to Ethan for creating NovelCOVID Api to track current cases and more stuff about Covid-19 or
         the novel coronavirus strain.</string>
     <string name="credit_one_github">https://github.com/NovelCOVID/API</string>
-    <string name="credit_two">Amod Malviya</string>
-    <string name="credit_two_desc">Thanks to Amod for Covid-19 Api for information of current Covid-19 cases in India and other
-    useful information</string>
-    <string name="credit_two_github">https://github.com/amodm/api-covid19-in</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="globlal_see_more">click to see more</string>
 
 

@@ -12,6 +12,13 @@ import com.destructo.corona_tracker.R
 /**
  * A simple [Fragment] subclass.
  */
+
+enum class DarkModeConfig {
+    ENABLE,
+    DISABLE,
+    FOLLOW_SYSTEM
+}
+
 class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {

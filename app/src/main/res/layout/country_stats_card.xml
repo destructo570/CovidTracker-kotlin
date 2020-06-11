@@ -6,7 +6,7 @@
     <data>
     <variable
         name="indiaData"
-        type="com.destructo.corona_tracker.model.GlobalCountryStatistics" />
+        type="com.destructo.corona_tracker.model.CountryStatistics" />
     </data>
 
     <androidx.cardview.widget.CardView

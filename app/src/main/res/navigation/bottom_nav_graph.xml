@@ -93,7 +93,7 @@
         >
 
         <argument android:name="countrySummary"
-            app:argType="com.destructo.corona_tracker.model.GlobalCountryStatistics"/>
+            app:argType="com.destructo.corona_tracker.model.CountryStatistics"/>
     </fragment>
     <fragment
         android:id="@+id/stateDetailsFragment"

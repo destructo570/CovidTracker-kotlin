@@ -33,7 +33,7 @@ class GlobalFragment : Fragment() {
         binding.globalViewModel = mglobalViewModel
 
 
-        mglobalViewModel.globalCountryStats.observe(viewLifecycleOwner, Observer {
+        mglobalViewModel.countryStats.observe(viewLifecycleOwner, Observer {
 
             val adap = FinalAdapter(
                 FinalAdapter.DataClickListener {

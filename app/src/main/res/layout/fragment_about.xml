@@ -152,55 +152,5 @@
             app:layout_constraintStart_toEndOf="@+id/card2"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card3"
-            android:layout_width="54dp"
-            android:layout_height="54dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            app:cardCornerRadius="250dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/credit_one_github">
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:src="@drawable/credit_two" />
-        </androidx.cardview.widget.CardView>
-
-        <TextView
-            style="@style/heading_text_medium_bold"
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/credit_two"
-            app:layout_constraintStart_toEndOf="@+id/card3"
-            app:layout_constraintTop_toBottomOf="@+id/credit_one_github" />
-
-        <TextView
-            android:id="@+id/textView18"
-            style="@style/body_text_regular"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/credit_two_desc"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/card3"
-            app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-        <Button
-            android:id="@+id/credit_two_github"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/social_github"
-            android:textColor="@color/primaryAccent"
-            app:layout_constraintStart_toEndOf="@+id/card3"
-            app:layout_constraintTop_toBottomOf="@+id/textView18" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

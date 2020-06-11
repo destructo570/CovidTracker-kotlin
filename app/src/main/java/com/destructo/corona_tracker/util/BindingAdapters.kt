@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.destructo.corona_tracker.util.adapter.IndiaStateAdapter
 import com.destructo.corona_tracker.util.adapter.HelplineContactAdapter
 import com.destructo.corona_tracker.model.ContactNumber
-import com.destructo.corona_tracker.model.GlobalCountryStatistics
+import com.destructo.corona_tracker.model.CountryStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
@@ -22,14 +22,14 @@ fun bindRecyclerView(recyclerView: RecyclerView, data:List<IndiaStateStats>?){
 }
 
 @BindingAdapter("setGlobalCountryInfected")
-fun TextView.setGlobalCountryInfectedForematted(item: GlobalCountryStatistics?){
+fun TextView.setGlobalCountryInfectedForematted(item: CountryStatistics?){
     item?.let {
         text = NumberFormat.getNumberInstance(Locale.US).format(item.total_infected)
     }
 }
 
 @BindingAdapter("setGlobalCountry")
-fun TextView.setGlobalCountryName(item: GlobalCountryStatistics?){
+fun TextView.setGlobalCountryName(item: CountryStatistics?){
     item?.let {
         text = item.country_name
     }

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="indiaViewModel"
             type="com.destructo.corona_tracker.viewmodel.IndiaViewModel" />

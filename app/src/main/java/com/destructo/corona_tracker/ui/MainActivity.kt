@@ -9,12 +9,6 @@ import com.destructo.corona_tracker.R
 import com.destructo.corona_tracker.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-enum class DarkModeConfig {
-    ENABLE,
-    DISABLE,
-    FOLLOW_SYSTEM
-}
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding

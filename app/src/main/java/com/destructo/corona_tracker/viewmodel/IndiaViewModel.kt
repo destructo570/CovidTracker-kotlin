@@ -4,9 +4,8 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.destructo.corona_tracker.model.GlobalCountryStatistics
+import com.destructo.corona_tracker.model.CountryStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats
-import com.destructo.corona_tracker.model.IndiaSummaryStats
 import com.destructo.corona_tracker.repository.GlobalApi
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -16,8 +15,8 @@ import java.lang.Exception
 
 class IndiaViewModel:ViewModel() {
 
-    private val  _indiaSummaryData = MutableLiveData<GlobalCountryStatistics>()
-    val indiaSummaryData:LiveData<GlobalCountryStatistics>
+    private val  _indiaSummaryData = MutableLiveData<CountryStatistics>()
+    val indiaSummaryData:LiveData<CountryStatistics>
     get() = _indiaSummaryData
 
     private val _indiaStateData = MutableLiveData<List<IndiaStateStats>>()
