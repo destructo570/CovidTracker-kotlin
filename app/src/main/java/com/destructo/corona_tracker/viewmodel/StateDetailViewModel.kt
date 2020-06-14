@@ -4,12 +4,13 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.destructo.corona_tracker.model.IndiaStateStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats
 
-class StateDetailViewModel (state: IndiaStateStats, application: Application) : AndroidViewModel(application) {
+class StateDetailViewModel (state: IndiaStateStatistics, application: Application) : AndroidViewModel(application) {
 
-    private val _stateSummary = MutableLiveData<IndiaStateStats>()
-    val stateSummary: LiveData<IndiaStateStats>
+    private val _stateSummary = MutableLiveData<IndiaStateStatistics>()
+    val stateSummary: LiveData<IndiaStateStatistics>
     get() = _stateSummary
 
     init {

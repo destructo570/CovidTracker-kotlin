@@ -7,7 +7,7 @@
 
         <variable
             name="stateSummary"
-            type="com.destructo.corona_tracker.model.IndiaStateStats" />
+            type="com.destructo.corona_tracker.model.IndiaStateStatistics" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:text="@{stateSummary.state}"
+            android:text="@{stateSummary.state_name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            app:formattedInteger="@{stateSummary.cases}"
+            app:formattedInteger="@{stateSummary.total_cases}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/state_name" />
 
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            app:formattedInteger="@{stateSummary.active}"
+            app:formattedInteger="@{stateSummary.total_active}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/state_cases" />
 
@@ -103,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            app:formattedInteger="@{stateSummary.recovered}"
+            app:formattedInteger="@{stateSummary.total_recovered}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/state_active" />
 
@@ -126,7 +126,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            app:formattedInteger="@{stateSummary.deaths}"
+            app:formattedInteger="@{stateSummary.total_deaths}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/state_recovered" />
     </androidx.constraintlayout.widget.ConstraintLayout>

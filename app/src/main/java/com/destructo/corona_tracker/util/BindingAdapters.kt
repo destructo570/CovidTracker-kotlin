@@ -7,13 +7,14 @@ import com.destructo.corona_tracker.util.adapter.IndiaStateAdapter
 import com.destructo.corona_tracker.util.adapter.HelplineContactAdapter
 import com.destructo.corona_tracker.model.ContactNumber
 import com.destructo.corona_tracker.model.CountryStatistics
+import com.destructo.corona_tracker.model.IndiaStateStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
 @BindingAdapter("stateList")
-fun bindRecyclerView(recyclerView: RecyclerView, data:List<IndiaStateStats>?){
+fun bindRecyclerView(recyclerView: RecyclerView, data:List<IndiaStateStatistics>?){
 
     val adapter = recyclerView.adapter as IndiaStateAdapter
     data?.let {

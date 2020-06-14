@@ -100,7 +100,7 @@
         android:name="com.destructo.corona_tracker.ui.StateDetailsFragment"
         >
         <argument android:name="stateSummary"
-            app:argType="com.destructo.corona_tracker.model.IndiaStateStats"/>
+            app:argType="com.destructo.corona_tracker.model.IndiaStateStatistics"/>
     </fragment>
 
 

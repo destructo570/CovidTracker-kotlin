@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="countryStatistics"
             type="com.destructo.corona_tracker.model.CountryStatistics" />

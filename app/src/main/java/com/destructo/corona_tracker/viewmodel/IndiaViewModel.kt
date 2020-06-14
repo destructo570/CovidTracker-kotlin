@@ -5,8 +5,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.destructo.corona_tracker.model.CountryStatistics
+import com.destructo.corona_tracker.model.IndiaStateStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats
 import com.destructo.corona_tracker.repository.GlobalApi
+import com.destructo.corona_tracker.repository.IndiaApi
+import com.destructo.corona_tracker.repository.IndiaApiService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -19,12 +22,12 @@ class IndiaViewModel:ViewModel() {
     val indiaSummaryData:LiveData<CountryStatistics>
     get() = _indiaSummaryData
 
-    private val _indiaStateData = MutableLiveData<List<IndiaStateStats>>()
-    val indiaStateData:LiveData<List<IndiaStateStats>>
+    private val _indiaStateData = MutableLiveData<List<IndiaStateStatistics>>()
+    val indiaStateData:LiveData<List<IndiaStateStatistics>>
     get() = _indiaStateData
 
-    private val _navigateToStateDetails = MutableLiveData<IndiaStateStats>()
-    val navigateToStateDetails:LiveData<IndiaStateStats>
+    private val _navigateToStateDetails = MutableLiveData<IndiaStateStatistics>()
+    val navigateToStateDetails:LiveData<IndiaStateStatistics>
     get() = _navigateToStateDetails
 
 
@@ -39,20 +42,20 @@ class IndiaViewModel:ViewModel() {
     private fun getIndiaData(){
 
         uiScope.launch {
-            var getIndiaDataDeferred = GlobalApi.retrofitService.getIndiaDataAsync()
+            var getIndiaDataDeferred = IndiaApi.retrofitService.getIndiaDataAsync()
             var getIndiaSummaryDeferred = GlobalApi.retrofitService.getCountryDataAsync("india")
 
             try {
              val indiaCoronaStatistics = getIndiaDataDeferred.await()
              val indiaSummaryStatistics =  getIndiaSummaryDeferred.await()
                 _indiaSummaryData.value = indiaSummaryStatistics
-                _indiaStateData.value = indiaCoronaStatistics.states
+                _indiaStateData.value = indiaCoronaStatistics.data?.stateStatistics
             }catch (e:Exception){
                 Log.e("IndiaViewModel","FAILED NETWORK ERROR\n" + e.message)
             }
         }
     }
-    fun onNavigationToStateDetails(selectedState:IndiaStateStats){
+    fun onNavigationToStateDetails(selectedState:IndiaStateStatistics){
         _navigateToStateDetails.value = selectedState
     }
 

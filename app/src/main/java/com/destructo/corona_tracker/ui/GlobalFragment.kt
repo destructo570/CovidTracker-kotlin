@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.destructo.corona_tracker.databinding.FragmentGlobalBinding
+import com.destructo.corona_tracker.util.adapter.CountryAdapter
 import com.destructo.corona_tracker.viewmodel.GlobalViewModel
 import com.destructo.corona_tracker.util.adapter.FinalAdapter
 
@@ -35,8 +36,8 @@ class GlobalFragment : Fragment() {
 
         mglobalViewModel.countryStats.observe(viewLifecycleOwner, Observer {
 
-            val adap = FinalAdapter(
-                FinalAdapter.DataClickListener {
+            val adap = CountryAdapter(
+                CountryAdapter.CountryClickListener {
                     mglobalViewModel.navigationToCountryDetail(it)
                 })
             adap.submitList(it)

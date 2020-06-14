@@ -13,7 +13,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fbd88ab-8fcd-4545-904f-4e14a94b3efa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/repository/GlobalApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/repository/GlobalApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/GlobalFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/GlobalFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/StateDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/StateDetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/BindingAdapters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/BindingAdapters.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/adapter/CountryAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/adapter/CountryAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/adapter/StateAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/adapter/StateAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/IndiaViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/IndiaViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModelFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/country_list_item_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/country_list_item_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_global.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_global.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_state_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_state_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/bottom_nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/bottom_nav_graph.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +53,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="navigationResourceFile" />
-        <option value="Kotlin File" />
         <option value="valueResourceFile" />
         <option value="Kotlin Enum" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -68,11 +84,11 @@
     <property name="ApkExportedModule" value="app" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="5f2b58f6" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-06-02T03:55:13.153Z" />
-    <property name="ExportApk.ApkPath" value="C:\git-projects\UdacityCourseProject\Kondroid\CovidTracker\app" />
+    <property name="ExportApk.ApkPath" value="C:\git-projects\CovidTracker-kotlin\New folder\CovidTracker-kotlin\app\release" />
     <property name="ExportApk.BuildVariants" value="release" />
     <property name="ExportApk.SignV2" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Codingwithmitch/MVIExample" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/release" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="memory.settings" />
   </component>
@@ -207,25 +223,25 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="357" y="275" key="AndroidCreateResourceDirectoryDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1591476052172" />
-    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1591840980202">
+    <state x="1060" y="275" key="FileChooserDialogImpl" timestamp="1591842521808">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1591840980202" />
-    <state width="1508" height="219" key="GridCell.Tab.0.bottom" timestamp="1591476480207">
+    <state x="1060" y="275" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1591842521808" />
+    <state width="1420" height="282" key="GridCell.Tab.0.bottom" timestamp="1592096445197">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1508" height="219" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1591476480207" />
-    <state width="1508" height="219" key="GridCell.Tab.0.center" timestamp="1591476480207">
+    <state width="1420" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1592096445197" />
+    <state width="1420" height="282" key="GridCell.Tab.0.center" timestamp="1592096445197">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1508" height="219" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1591476480207" />
-    <state width="1508" height="219" key="GridCell.Tab.0.left" timestamp="1591476480206">
+    <state width="1420" height="282" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1592096445197" />
+    <state width="1420" height="282" key="GridCell.Tab.0.left" timestamp="1592096445196">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1508" height="219" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1591476480206" />
-    <state width="1508" height="219" key="GridCell.Tab.0.right" timestamp="1591476480207">
+    <state width="1420" height="282" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1592096445196" />
+    <state width="1420" height="282" key="GridCell.Tab.0.right" timestamp="1592096445197">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1508" height="219" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1591476480207" />
+    <state width="1420" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1592096445197" />
   </component>
 </project>

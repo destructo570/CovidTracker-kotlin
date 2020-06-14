@@ -2,6 +2,7 @@ package com.destructo.corona_tracker.repository
 
 import com.destructo.corona_tracker.model.GlobalCoronaStatistics
 import com.destructo.corona_tracker.model.CountryStatistics
+import com.destructo.corona_tracker.model.IndiaCoronaStatistics
 import com.destructo.corona_tracker.model.IndiaStatistics
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi
@@ -13,6 +14,7 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 private const val BASE_URL = "https://disease.sh/v2/"
+
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
@@ -39,9 +41,12 @@ interface GlobalApiService {
 
     @GET("countries/{country}")
     fun getCountryDataAsync(@Path("country") country:String): Deferred<CountryStatistics>
+
 }
 
 object GlobalApi {
     val retrofitService: GlobalApiService by lazy { retrofit.create(GlobalApiService::class.java) }
 }
+
+
 

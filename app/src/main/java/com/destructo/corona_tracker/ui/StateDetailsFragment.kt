@@ -39,7 +39,7 @@ class StateDetailsFragment : Fragment() {
 
         viewModel.stateSummary.observe(viewLifecycleOwner, Observer {
             binding.stateSummary = it
-            it.state?.let { it1 -> setTitle(it1) }
+            it.state_name?.let { it1 -> setTitle(it1) }
         })
 
         return binding.root

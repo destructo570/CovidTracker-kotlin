@@ -6,11 +6,12 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.destructo.corona_tracker.databinding.StateDataListItemViewBinding
+import com.destructo.corona_tracker.model.IndiaStateStatistics
 import com.destructo.corona_tracker.model.IndiaStateStats
 import java.text.NumberFormat
 import java.util.*
 
-class IndiaStateAdapter(private val clickListener: StateClickListener): ListAdapter<IndiaStateStats,
+class IndiaStateAdapter(private val clickListener: StateClickListener): ListAdapter<IndiaStateStatistics,
         IndiaStateAdapter.ViewHolder>(
     IndiaStateDiffCallback()
 ) {
@@ -32,10 +33,10 @@ class IndiaStateAdapter(private val clickListener: StateClickListener): ListAdap
 
     class ViewHolder(val binding: StateDataListItemViewBinding) : RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(stateData: IndiaStateStats) {
-            binding.stateName.text = stateData.state
-            if(stateData.cases != null ) {
-                binding.stateInfectedCount.text = NumberFormat.getInstance(Locale.US).format(stateData.cases)
+        fun bind(stateData: IndiaStateStatistics) {
+            binding.stateName.text = stateData.state_name
+            if(stateData.total_cases != null ) {
+                binding.stateInfectedCount.text = NumberFormat.getInstance(Locale.US).format(stateData.total_cases)
             }else{
                 binding.stateInfectedCount.text = "null"
             }
@@ -56,17 +57,17 @@ class IndiaStateAdapter(private val clickListener: StateClickListener): ListAdap
 
 }
 
-class IndiaStateDiffCallback:DiffUtil.ItemCallback<IndiaStateStats>(){
-    override fun areItemsTheSame(oldItem: IndiaStateStats, newItem: IndiaStateStats): Boolean {
-        return oldItem.state == newItem.state
+class IndiaStateDiffCallback:DiffUtil.ItemCallback<IndiaStateStatistics>(){
+    override fun areItemsTheSame(oldItem: IndiaStateStatistics, newItem: IndiaStateStatistics): Boolean {
+        return oldItem.state_name == newItem.state_name
     }
 
-    override fun areContentsTheSame(oldItem: IndiaStateStats, newItem: IndiaStateStats): Boolean {
+    override fun areContentsTheSame(oldItem: IndiaStateStatistics, newItem: IndiaStateStatistics): Boolean {
         return oldItem == newItem
     }
 
 }
 
-class StateClickListener(val clickListener: (state:IndiaStateStats) -> Unit){
-    fun onClick(state: IndiaStateStats) = clickListener(state)
+class StateClickListener(val clickListener: (state:IndiaStateStatistics) -> Unit){
+    fun onClick(state: IndiaStateStatistics) = clickListener(state)
 }
