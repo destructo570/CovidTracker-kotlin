@@ -6,7 +6,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.destructo.corona_tracker.model.CountryStatistics
 import com.destructo.corona_tracker.model.IndiaStateStatistics
-import com.destructo.corona_tracker.model.IndiaStateStats
 import com.destructo.corona_tracker.repository.GlobalApi
 import com.destructo.corona_tracker.repository.IndiaApi
 import com.destructo.corona_tracker.repository.IndiaApiService

@@ -5,7 +5,6 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.destructo.corona_tracker.model.IndiaStateStatistics
-import com.destructo.corona_tracker.model.IndiaStateStats
 
 class StateDetailViewModel (state: IndiaStateStatistics, application: Application) : AndroidViewModel(application) {
 

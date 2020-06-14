@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.destructo.corona_tracker.databinding.FragmentStateDetailsBinding
+import com.destructo.corona_tracker.databinding.FragmentIndiaStateDetailsBinding
 import com.destructo.corona_tracker.viewmodel.StateDetailViewModelFactory
 import com.destructo.corona_tracker.viewmodel.StateDetailViewModel
 
@@ -22,7 +22,7 @@ class StateDetailsFragment : Fragment() {
     ): View? {
 
         val application = requireNotNull(activity).application
-        val binding = FragmentStateDetailsBinding.inflate(inflater)
+        val binding = FragmentIndiaStateDetailsBinding.inflate(inflater)
         val stateSummary = StateDetailsFragmentArgs.fromBundle(
             requireArguments()
         ).stateSummary

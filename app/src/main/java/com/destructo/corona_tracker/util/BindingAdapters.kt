@@ -8,7 +8,6 @@ import com.destructo.corona_tracker.util.adapter.HelplineContactAdapter
 import com.destructo.corona_tracker.model.ContactNumber
 import com.destructo.corona_tracker.model.CountryStatistics
 import com.destructo.corona_tracker.model.IndiaStateStatistics
-import com.destructo.corona_tracker.model.IndiaStateStats
 import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*

@@ -27,7 +27,7 @@
     <fragment
         android:id="@+id/countryFragment"
         android:name="com.destructo.corona_tracker.ui.IndiaFragment"
-        tools:layout="@layout/fragment_country" >
+        tools:layout="@layout/fragment_india" >
         <action
             android:id="@+id/action_countryFragment_to_livemapFragment"
             app:destination="@id/livemapFragment" />

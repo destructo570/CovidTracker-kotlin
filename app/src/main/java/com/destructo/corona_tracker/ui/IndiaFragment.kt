@@ -9,9 +9,9 @@ import androidx.activity.addCallback
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.destructo.corona_tracker.databinding.FragmentIndiaBinding
 import com.destructo.corona_tracker.util.adapter.IndiaStateAdapter
 import com.destructo.corona_tracker.util.adapter.StateClickListener
-import com.destructo.corona_tracker.databinding.FragmentCountryBinding
 import com.destructo.corona_tracker.viewmodel.IndiaViewModel
 
 /**
@@ -35,7 +35,7 @@ class IndiaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = FragmentCountryBinding.inflate(inflater)
+        val binding = FragmentIndiaBinding.inflate(inflater)
         binding.include.globalMoreButton.visibility = View.GONE
         binding.setLifecycleOwner(this)
 

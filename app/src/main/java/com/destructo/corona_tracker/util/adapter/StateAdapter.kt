@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.destructo.corona_tracker.databinding.StateDataListItemViewBinding
 import com.destructo.corona_tracker.model.IndiaStateStatistics
-import com.destructo.corona_tracker.model.IndiaStateStats
 import java.text.NumberFormat
 import java.util.*
 

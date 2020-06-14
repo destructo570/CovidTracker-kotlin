@@ -4,7 +4,6 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.destructo.corona_tracker.model.IndiaStateStatistics
-import com.destructo.corona_tracker.model.IndiaStateStats
 
 
 @Suppress("UNCHECKED_CAST")
