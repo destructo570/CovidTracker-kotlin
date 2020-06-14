@@ -5,11 +5,19 @@ This app was made as part of an excercise to learn more about android developmen
 
 ### DOWNLOAD :
 
+#### Version 1.1
+https://drive.google.com/file/d/1JZiFBtWqVHzzTFi-G_axxVpS0KOtxoW8/view?usp=sharing
+
 #### Version 1.0
 https://drive.google.com/file/d/1diBpcr_ghZ3FfjHPHc4cXc-Un92haeoc/view?usp=sharing
 
 ### Changelog :
 
+#### v1.1
+   - Fixed India data showing -ve number bug
+   - New app icon
+   - Refactored the codebase
+   
 #### v1.0
    - Initial version
 
