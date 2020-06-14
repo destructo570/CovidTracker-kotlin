@@ -5,6 +5,9 @@ This app was made as part of an excercise to learn more about android developmen
 
 ### DOWNLOAD :
 
+#### Version 1.2
+https://drive.google.com/file/d/1099FbaYNlS0tM7ViseZK0J7rZGX_EAW9/view?usp=sharing
+
 #### Version 1.1
 https://drive.google.com/file/d/1JZiFBtWqVHzzTFi-G_axxVpS0KOtxoW8/view?usp=sharing
 
@@ -12,6 +15,9 @@ https://drive.google.com/file/d/1JZiFBtWqVHzzTFi-G_axxVpS0KOtxoW8/view?usp=shari
 https://drive.google.com/file/d/1diBpcr_ghZ3FfjHPHc4cXc-Un92haeoc/view?usp=sharing
 
 ### Changelog :
+
+#### v1.2
+   - Replaced India data source
 
 #### v1.1
    - Fixed India data showing -ve number bug
