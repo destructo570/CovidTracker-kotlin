@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.viewmodel
+package com.destructo.corona_tracker.viewmodel.help
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

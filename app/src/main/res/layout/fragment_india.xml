@@ -6,7 +6,7 @@
     <data>
         <variable
             name="indiaViewModel"
-            type="com.destructo.corona_tracker.viewmodel.IndiaViewModel" />
+            type="com.destructo.corona_tracker.viewmodel.india.IndiaViewModel" />
 
     </data>
 
@@ -16,7 +16,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.GlobalFragment">
+        tools:context=".ui.global.GlobalFragment">
 
         <ImageView
             android:id="@+id/imageView2"

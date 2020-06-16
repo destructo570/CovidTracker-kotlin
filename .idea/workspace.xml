@@ -14,22 +14,35 @@
   <component name="ChangeListManager">
     <list default="true" id="8fbd88ab-8fcd-4545-904f-4e14a94b3efa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/model/IndiaStatistics.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/repository/GlobalApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/repository/GlobalApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/IndiaFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/IndiaFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/StateDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/StateDetailsFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/BindingAdapters.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/BindingAdapters.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/adapter/StateAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/util/adapter/StateAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/IndiaViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/IndiaViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModelFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_country.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_india.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_state_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_india_state_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/AboutFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/about/AboutFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/CountryDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/global/CountryDetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/CovidInfoFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/help/CovidInfoFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/GlobalDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/global/GlobalDetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/GlobalFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/global/GlobalFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/HelpFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/help/HelpFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/IndiaFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/india/IndiaFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/IndiaHelplineContact.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/help/IndiaHelplineContact.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/LiveMapFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/livemap/LiveMapFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/SettingsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/SettingsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/StateDetailsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/ui/india/StateDetailsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/CountryDetailViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/global/CountryDetailViewModelFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/GlobalCountryDetailViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/global/GlobalCountryDetailViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/GlobalDetailViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/global/GlobalDetailViewModelFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/GlobalDetailsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/global/GlobalDetailsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/GlobalViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/global/GlobalViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/HelplineViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/help/HelplineViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/IndiaViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/india/IndiaViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/india/StateDetailViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/StateDetailViewModelFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/destructo/corona_tracker/viewmodel/india/StateDetailViewModelFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_about.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_covid_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_covid_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_global.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_global.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_help.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_help.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_india.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_india.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_india_helpline_contact.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_india_helpline_contact.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_live_map.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_live_map.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/bottom_nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/bottom_nav_graph.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,11 +108,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="com.destructo.corona_tracker.util.adapter" />
-      <recent name="com.destructo.corona_tracker.ui" />
-      <recent name="com.destructo.corona_tracker.viewmodel" />
-      <recent name="com.destructo.corona_tracker.util" />
-      <recent name="com.destructo.covidtracker.global.globalCountry" />
+      <recent name="com.destructo.corona_tracker.viewmodel.india" />
+      <recent name="com.destructo.corona_tracker.viewmodel.global" />
+      <recent name="com.destructo.corona_tracker.viewmodel.help" />
+      <recent name="com.destructo.corona_tracker.ui.help" />
+      <recent name="com.destructo.corona_tracker.ui.global" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="com.destructo.covidtracker.model" />
@@ -216,10 +229,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="423" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1591477233935" />
-    <state x="556" y="173" width="475" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1591476428472">
+    <state x="556" y="173" width="509" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1592303392249">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="556" y="173" width="475" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1591476428472" />
+    <state x="556" y="173" width="509" height="695" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1592303392249" />
     <state x="357" y="275" key="AndroidCreateResourceDirectoryDialog" timestamp="1591476052172">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

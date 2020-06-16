@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.ui
+package com.destructo.corona_tracker.ui.livemap
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -12,9 +12,6 @@ import androidx.webkit.WebSettingsCompat
 import androidx.webkit.WebViewFeature
 import com.destructo.corona_tracker.databinding.FragmentLiveMapBinding
 
-/**
- * A simple [Fragment] subclass.
- */
 class LiveMapFragment : Fragment() {
 
     private lateinit var binding: FragmentLiveMapBinding

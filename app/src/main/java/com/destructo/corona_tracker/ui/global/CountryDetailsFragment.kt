@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.ui
+package com.destructo.corona_tracker.ui.global
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,12 +8,10 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.destructo.corona_tracker.databinding.FragmentCountryDetailsBinding
-import com.destructo.corona_tracker.viewmodel.CountryDetailViewModelFactory
-import com.destructo.corona_tracker.viewmodel.GlobalCountryDetailViewModel
+import com.destructo.corona_tracker.ui.MainActivity
+import com.destructo.corona_tracker.viewmodel.global.CountryDetailViewModelFactory
+import com.destructo.corona_tracker.viewmodel.global.GlobalCountryDetailViewModel
 
-/**
- * A simple [Fragment] subclass.
- */
 class CountryDetailsFragment : Fragment() {
 
 

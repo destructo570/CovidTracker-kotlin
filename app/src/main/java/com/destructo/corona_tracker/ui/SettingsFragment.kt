@@ -10,7 +10,7 @@ import androidx.preference.PreferenceFragmentCompat
 import com.destructo.corona_tracker.R
 
 /**
- * A simple [Fragment] subclass.
+ * This fragment is currently not being used in the app.
  */
 
 enum class DarkModeConfig {

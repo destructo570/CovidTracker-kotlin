@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.LiveMapFragment">
+        tools:context=".ui.livemap.LiveMapFragment">
 
         <WebView
             android:id="@+id/live_mapView"

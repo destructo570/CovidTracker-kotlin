@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.ui
+package com.destructo.corona_tracker.ui.help
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,9 +10,6 @@ import androidx.navigation.Navigation
 import com.destructo.corona_tracker.R
 import com.destructo.corona_tracker.databinding.FragmentHelpBinding
 
-/**
- * A simple [Fragment] subclass.
- */
 class HelpFragment : Fragment() {
 
     override fun onCreateView(

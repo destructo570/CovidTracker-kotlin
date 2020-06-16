@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.ui
+package com.destructo.corona_tracker.ui.about
 
 import android.content.Intent
 import android.net.Uri
@@ -11,9 +11,6 @@ import androidx.activity.addCallback
 import com.destructo.corona_tracker.R
 import com.destructo.corona_tracker.databinding.FragmentAboutBinding
 
-/**
- * A simple [Fragment] subclass.
- */
 class AboutFragment : Fragment() {
 
     lateinit var binding: FragmentAboutBinding

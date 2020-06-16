@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.ui
+package com.destructo.corona_tracker.ui.global
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,12 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.destructo.corona_tracker.databinding.FragmentGlobalBinding
 import com.destructo.corona_tracker.util.adapter.CountryAdapter
-import com.destructo.corona_tracker.viewmodel.GlobalViewModel
-import com.destructo.corona_tracker.util.adapter.FinalAdapter
+import com.destructo.corona_tracker.viewmodel.global.GlobalViewModel
 
-/**
- * A simple [Fragment] subclass.
- */
 class GlobalFragment : Fragment() {
 
     private val mglobalViewModel: GlobalViewModel by lazy {

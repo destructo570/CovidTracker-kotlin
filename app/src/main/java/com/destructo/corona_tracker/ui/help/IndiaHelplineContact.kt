@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.ui
+package com.destructo.corona_tracker.ui.help
 
 import android.content.Intent
 import android.net.Uri
@@ -11,12 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.destructo.corona_tracker.databinding.FragmentIndiaHelplineContactBinding
 import com.destructo.corona_tracker.util.adapter.ContactClickListener
 import com.destructo.corona_tracker.util.adapter.HelplineContactAdapter
-import com.destructo.corona_tracker.viewmodel.HelplineViewModel
+import com.destructo.corona_tracker.viewmodel.help.HelplineViewModel
 
-
-/**
- * A simple [Fragment] subclass.
- */
 class IndiaHelplineContact : Fragment() {
 
     override fun onCreateView(

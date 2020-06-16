@@ -1,4 +1,4 @@
-package com.destructo.corona_tracker.ui
+package com.destructo.corona_tracker.ui.india
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,11 +12,8 @@ import androidx.navigation.fragment.findNavController
 import com.destructo.corona_tracker.databinding.FragmentIndiaBinding
 import com.destructo.corona_tracker.util.adapter.IndiaStateAdapter
 import com.destructo.corona_tracker.util.adapter.StateClickListener
-import com.destructo.corona_tracker.viewmodel.IndiaViewModel
+import com.destructo.corona_tracker.viewmodel.india.IndiaViewModel
 
-/**
- * A simple [Fragment] subclass.
- */
 class IndiaFragment : Fragment() {
 
     private val indiaViewModel: IndiaViewModel by lazy {
