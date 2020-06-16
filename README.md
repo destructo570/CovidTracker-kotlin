@@ -54,3 +54,5 @@ https://drive.google.com/file/d/1diBpcr_ghZ3FfjHPHc4cXc-Un92haeoc/view?usp=shari
 ### App Is Using
 - Retrofit
 - Moshi
+- MVVM Architecture
+- LiveData, Data Binding, Navigation Components
