@@ -38,12 +38,8 @@ https://drive.google.com/file/d/1diBpcr_ghZ3FfjHPHc4cXc-Un92haeoc/view?usp=shari
 
 ### SCREENSHOTS: :iphone:
 
-![alt text](https://i.imgur.com/ydR2H20.jpg)
-![alt text](https://i.imgur.com/z8Y0Q4V.jpg)
-![alt text](https://i.imgur.com/wAcK2fB.jpg)
-![alt text](https://i.imgur.com/QSQjWWO.jpg)
-![alt text](https://i.imgur.com/dlxy7XE.jpg)
-![alt text](https://i.imgur.com/5aYztHM.jpg)
+<img src="https://imgur.com/N6ewUrb.jpg" width=30%> <img src="https://imgur.com/Su1iXeO.jpg" width=30%> <img src="https://imgur.com/6mjoJEr.jpg" width=30%>
+<img src="https://imgur.com/2ELx02d.jpg" width=30%> <img src="https://imgur.com/4HSJOAH.jpg" width=30%> <img src="https://imgur.com/lBROAY0.jpg" width=30%> 
 
 ### CREDITS
 
