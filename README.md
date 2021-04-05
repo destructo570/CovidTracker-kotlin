@@ -48,7 +48,9 @@ https://drive.google.com/file/d/1diBpcr_ghZ3FfjHPHc4cXc-Un92haeoc/view?usp=shari
 - Drawkit for those beautiful illustrations
 
 ### App Is Using
-- Retrofit
-- Moshi
+- Retrofit for networking
+- Moshi for json parsing
 - MVVM Architecture
-- LiveData, Data Binding, Navigation Components
+- LiveData
+- Data Binding 
+- Navigation Components
